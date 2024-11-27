@@ -1,0 +1,107 @@
+<!-- Unit 5 Project
+Requirements
+[  ] <div> and <span>
+[  ] height: and width:
+[  ] margin: and padding: 
+[  ] Three Images
+
+Select ONE Additional Feature to Add  
+[ no ] Feature 1 - Flexbox
+[ no ] Feature 2 - Flip Card
+[ no ] Feature 3 - Navbar
+[ no ] Feature 4 - Shaking Animation
+[ no ] Feature 5 - Gradient Background
+[ no ] Feature 6 - Spotify Playlist
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Unit 5 Project</title>
+    <meta charset="utf-8" />
+    <style>
+      h1 {
+        font-family: "Josefin Sans", sans-serif;
+        text-align: center;
+        color: white;
+        padding: 20px;
+        margin: auto;
+      }
+      p {
+        font-family: "Josefin Sans", sans-serif;
+      }
+      body {
+        background-image: url(https://www.prosportsbackgrounds.com/wp-content/uploads/Buffalo-Bills-wallpaper-logo-geometric-desktop-NFL-2024.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .content {
+        max-width: 500px;
+        margin: auto;
+        background: transparent;
+        padding: 10px;
+        color: white;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      li {
+        display: inline;
+      }
+      li a {
+        text-decoration: none;
+        padding: 8px;
+        background-color: grey;
+        color: white;
+        font-size: 20px;
+      }
+      #Bills-Roster {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      #Josh-Allen {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Bills.html">Bills</a></li>
+      <li><a href="Lions.html">Lions</a></li>
+      <li><a href="Halftime-Show.html">Halftime Show</a></li>
+    </ul>
+    <h1>Welcome to Bills Mafia</h1>
+    <img
+      id="Bills-Roster"
+      src="https://images2.minutemediacdn.com/image/upload/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/shape/cover/sport/a807be66e45ad4cc10703d5046906c2d4dffc02aa61f88f554eb9152fb6a4b4e.jpg"
+    />
+    <div class="content">
+      <p>
+        The Buffalo Bills are led by 28 year old duel-threat Quaterback Josh
+        Allen.
+      </p>
+    </div>
+    <img
+      id="Josh-Allen"
+      src="https://www.news10.com/wp-content/uploads/sites/64/2024/09/AP24268023437936.jpg?w=1280"
+    />
+  </body>
+</html>

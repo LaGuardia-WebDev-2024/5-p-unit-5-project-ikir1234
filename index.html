@@ -16,17 +16,168 @@ Select ONE Additional Feature to Add
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Unit 5 Project</title>
+    <meta charset="utf-8" />
+    <style>
+      h1 {
+        font-family: "Josefin Sans", sans-serif;
+        text-align:center;
+      }
+      p {
+        font-family: "Josefin Sans", sans-serif;
+      }
+      body {
+        background-image: url(https://www.prosportsbackgrounds.com/wp-content/uploads/NFL-wallpaper-geometric-logo-geometric-desktop-NFL-2024.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      .flip-card {
+        background-color: rgb(96, 139, 193);
+        width: 570px;
+        height: 500px;
+        perspective: 1000px;
+      }
 
-<head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
 
-  </style>
-</head>
-<body>
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
 
- 
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
 
-</body>
+      .flip-card-front {
+        background-color: rgb(236, 131, 5);
+        color: black;
+      }
+
+      .flip-card-back {
+        background-color: #2980b9;
+        color: white;
+        transform: rotateY(180deg);
+        width: 500px;
+        height:490px;
+        /*         margin: 30px; */
+        border: 5px solid lightblue;
+        /*         padding: 10px */
+        margin-left: 25px;
+      }
+      .content {
+        max-width: 500px;
+        margin: auto;
+        background: transparent;
+        padding: 10px;
+        color:white;
+      }
+        .Super-dome{display:block;
+      margin-left:auto;
+      margin-right:auto;}
+        #Warning {color:red;}
+        #Prediction {font-style:italic;}
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        overflow: hidden;
+        position:fixed;
+        top:0;
+        width:100%;
+      }
+      li {
+        display: inline;
+      }
+      li a {
+        text-decoration: none;
+        padding: 8px;
+        background-color: grey;
+        color: white;
+        font-size:20px;
+        }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Bills.html">Bills</a></li>
+      <li><a href="Lions.html">Lions</a></li>
+      <li><a href="Halftime-Show.html">Halftime Show</a></li>
+    </ul>
+    <div class="content">
+      <h1>SUPER BOWL LIX</h1>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Super_Bowl_LIX_Logo.svg/1200px-Super_Bowl_LIX_Logo.svg.png"
+              alt="Avatar"
+              style="width: 570px; object-fit: cover"
+            />
+          </div>
+          <div class="flip-card-back">
+            <h1>Detroit Lions vs Buffalo Bills</h1>
+            <img
+              src="https://cdn.freebiesupply.com/images/large/2x/detroit-lions-logo-transparent.png"
+              width="225"
+            />
+            <img
+              src="https://cdn.freebiesupply.com/images/large/2x/buffalo-bills-logo-transparent.png"
+              width="225"
+            />
+            <p>Apple Halftime Show featuring <strong>Kendrick Lamar</strong></p>
+            <img
+              src="https://i.iheart.com/v3/catalog/artist/432004?ops=fit(480%2C480)%2Crun(%22circle%22)"
+              height="170"
+            />
+          </div>
+        </div>
+      </div>
+      <p>
+        Super Bowl LIX will be held at Caesars Superdome in New Orleans, home of
+        the New Orlean Saints. <br />
+        <span id="Prediction"
+          ><strong id="Warning">Fair warning</strong>, this is a way-too-early
+          prediction of Super Bowl LIX, based on current odds and my personal
+          predictions. So don't blame me if this ends up being wrong, it's not
+          like I can see the future.</span
+        >
+      </p>
+    </div>
+    <div>
+      <img
+        src="https://static.clubs.nfl.com/image/private/t_editorial_landscape_12_desktop/saints/wbyjqae7lzipfckei4b7.jpg"
+      class="Super-dome"
+           />
+    </div>
+    <div class="content">
+      <p>
+        I don't quite understand the ticketing system used in the Super Bowl
+        right now, but you can buy tickets on Seat Geek for the lowest listed
+        price at <strong>$5,774</strong>
+        right now.
+      </p>
+    </div>
+  </body>
 </html>
